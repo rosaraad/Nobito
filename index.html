@@ -16,36 +16,69 @@
     <div class="header-navbar hidden lg:block w-full h-[96px] lg:h-[169px] bg-[#FDFDFD]">
       <div class="navbar-top flex px-[120px] py-[24px] flex justify-between border-b-[1px] border-[#C0C0C0]">
         <div class="top-right flex items-center gap-x-[40px]">
-          <div class="w-[180px] h-[65px]"><img class="w-full h-full" src="src/images/logo-1.svg" alt=""></div>
+          <div class="w-[180px] h-[65px]"><a href=""><img class="w-full h-full" src="src/images/logo-1.svg" alt=""></a>
+          </div>
           <div class="flex items-center gap-x-[24px] text-[#757575] text-[16px]">
-            <div class="hover:brightness-50">نوبت دهی مطب</div>
-            <div class="hover:brightness-50">خدمات</div>
-            <div class="hover:brightness-50 transition-all duration-300">مشاوره آنلاین</div>
-            <div class="hover:brightness-50">مجله سلامت</div>
-            <div class="hover:brightness-50">نیکوکاری</div>
+            <div class="hover:brightness-50"><a href="">نوبت دهی مطب</a></div>
+            <div class="menu relative z-[1000] cursor-pointer" onclick="openMenu(this)">
+              <span class="hover:brightness-50 transition duration-300" href="">خدمات</span>
+              <div
+                class="submenu hidden absolute top-[20px] right-0 mt-4 w-[190px] overflow-hidden rounded-xl bg-white py-2 shadow-lg">
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  خدمات پزشکی در منزل</div>
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  مشاوره غیرحضوری</div>
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  مراکز درمانی</div>
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  نوبت دهی</div>
+              </div>
+            </div>
+            <div class="hover:brightness-50 transition-all duration-300"><a href="">مشاوره آنلاین</a></div>
+            <div class="hover:brightness-50"><a href="">مجله سلامت</a></div>
+            <div class="menu relative z-[1000] cursor-pointer" onclick="openMenu(this)">
+              <span class="hover:brightness-50 transition duration-300" href="">نیکوکاری</span>
+              <div
+                class="submenu hidden absolute top-[20px] right-0 mt-4 w-[190px] overflow-hidden rounded-xl bg-white py-2 shadow-lg">
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  درمانگر داوطلب</div>
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  بیشتر بدانید</div>
+                <div
+                  class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                  کمک مالی</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="top-left flex items-center gap-x-[16px]">
           <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-50">
-            <img class="w-full h-full" src="src/images/notification.svg" alt="">
+            <img class="w-full h-full cursor-pointer" src="src/images/notification.svg" alt="">
           </div>
-          <div><button
-              class="w-[117px] h-[48px] rounded-[8px] bg-[#1F7168] text-[#F9F9F9] text-[16px] flex justify-center items-center">ورود/ثبت
-              نام</button></div>
+          <div><a
+              class="w-[117px] h-[48px] rounded-[8px] bg-[#1F7168] text-[#F9F9F9] text-[16px] flex justify-center items-center"
+              href="">ورود/ثبت نام</a></div>
         </div>
       </div>
       <div class="navbar-btm flex items-center justify-between px-[120px] py-[16px]">
         <div class="btm-right flex items-center gap-x-[24px]">
-          <div class="hover:brightness-50"><img src="src/images/instagram-1.svg" alt=""></div>
-          <div class="hover:brightness-50"><img src="src/images/send-1.svg" alt=""></div>
-          <div class="hover:brightness-50"><img src="src/images/youtube-1.svg" alt=""></div>
-          <div class="hover:brightness-50"><img src="src/images/linkedin-1.svg" alt=""></div>
+          <div class="hover:brightness-50"><a href=""><img src="src/images/instagram-1.svg" alt=""></a></div>
+          <div class="hover:brightness-50"><a href=""><img src="src/images/send-1.svg" alt=""></a></div>
+          <div class="hover:brightness-50"><a href=""><img src="src/images/youtube-1.svg" alt=""></a></div>
+          <div class="hover:brightness-50"><a href=""><img src="src/images/linkedin-1.svg" alt=""></a></div>
         </div>
         <div class="btm-left flex items-center gap-x-[24px] text-[#757575] text-[16px]">
-          <div class="hover:brightness-50">درباره ما</div>
-          <div class="hover:brightness-50">تماس با ما</div>
-          <div class="hover:brightness-50">تماس با ما</div>
-          <div class="flex items-center hover:brightness-50 transition-all duration-300"><img src="src/images/location.svg" alt="">+ انتخاب آدرس</div>
+          <div class="hover:brightness-50"><a href="pages/aboutus.html">درباره ما</a></div>
+          <div class="hover:brightness-50"><a href="pages/contactus.html">تماس با ما</a></div>
+          <div class="hover:brightness-50"><a href="">سوالات متداول</a></div>
+          <div class="flex items-center hover:brightness-50 transition-all duration-300"><img
+              src="src/images/location.svg" alt="">+ انتخاب آدرس</div>
         </div>
       </div>
     </div>
@@ -53,18 +86,78 @@
     <div class="navbar flex lg:hidden px-[16px] py-[8px] justify-between items-center bg-[#FDFDFD]">
       <div class="navbar-right w-[133px] h-[48px]"><img src="src/images/logo-1.svg" alt=""></div>
       <div class="navbar-left flex justify-between items-center gap-x-[12px]">
-        <div class="w-[24px] h-[24px] flex justify-center items-center"><img src="src/images/search-dark.svg" alt=""></div>
-        <div class="w-[24px] h-[24px] flex justify-center items-center"><img src="src/images/menu.svg" alt=""></div>
+        <div class="w-[24px] h-[24px] flex justify-center items-center"><img src="src/images/search-dark.svg" alt="">
+        </div>
+        <div class="w-[24px] h-[24px] flex justify-center items-center menu relative z-[1000] cursor-pointer"
+          onclick="openMenu(this)">
+          <img src="src/images/menu.svg" alt="">
+          <div
+            class="submenu hidden absolute top-[28px] -left-[18px] mt-4 w-[190px] h-screen overflow-hidden bg-white py-2 shadow-lg">
+            <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">خدمات</div>
+            <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مشاوره آنلاین</a></div>
+            <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مجله سلامت</a></div>
+            <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">نیکوکاری</div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="header-banner w-full h-[322px] lg:h-[422px]">
-      <img class="w-full h-full hidden lg:block" src="src/images/Banner-big.png" alt="">
-      <img class="w-full h-full block lg:hidden" src="src/images/Banner-small.png" alt="">
+    <div class="header-banner w-full h-[322px] lg:h-[422px] relative mb-[72px] lg:mb-[144px]">
+      <img class="w-full h-[382px] hidden lg:block object-cover" src="src/images/Banner-big.svg" alt="">
+      <img class="w-full h-[298px] block lg:hidden object-cover" src="src/images/Banner-small.svg" alt="">
+      <div
+        class="flex items-center justify-between px-[12px] lg:px-[20px] w-[328px] h-[48px] lg:w-[798px] lg:h-[80px] bg-[#FEFEFE] rounded-[8px] lg:rounded-[16px] absolute left-1/2 -translate-x-1/2 bottom-0">
+        <div class="flex items-center gap-x-[8px]">
+          <img class="w-[18px] h-[18px] lg:w-[32px] lg:h-[32px]" src="src/images/search-light.svg" alt="">
+          <div class="text-[#B7B7B7] lg:text-[#919191] text-[14px] lg:text-[20px]"><input
+              class="w-[210px] lg:w-[500px] px-[5px] text-black" type="text" placeholder="جستجو پزشک،درمانگر،کلینیک...">
+          </div>
+        </div>
+        <div
+          class="hidden lg:flex w-[141px] h-[40px] justify-between items-center px-[16px] py-[8px] rounded-[7px] text-[#1C675F] border-[#1C675F] border-[1px]">
+          <img src="src/images/location.svg" alt="">انتخاب شهر
+        </div>
+        <div
+          class="flex lg:hidden w-[30px] h-[30px] justify-center items-center border-[#1C675F] border-[1px] rounded-[4px] bg-[#228766]/8">
+          <img class="w-[18px] h-[18px]" src="src/images/location.svg" alt="">
+        </div>
+      </div>
     </div>
     <!--end header-->
+    <!--counter-->
+    <div class="counter-box relative w-full h-[262px] lg:h-[190px]">
+      <div
+        class="h-[24px] lg:h-[32px] w-[85%] bg-[#1F7168] absolute top-0 right-0 [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_0)]">
+      </div>
+      <div
+        class="w-full h-[214px] lg:h-[126px] bg-[#E3EBEA] lg:bg-[#F5F5F5] absolute top-[24px] lg:top-[32px] flex flex-wrap gap-x-[90px] gap-y-[40px] lg:gap-0 justify-between items-center px-[48px] py-[24px] lg:px-[220px] lg:py-[16px]">
+        <div id="counter-section" class="w-fit h-[63px] lg:h-[94px] text-[353535] font-sans text-center">
+          <h2 class="counter text-[20px] lg:text-[32px] font-semibold" data-target="30000" dir="ltr">+0</h2>
+          <div class="text-[14px] lg:text-[20px] mt-[12px] lg:mt-[16px]">نوبت دهی روزانه</div>
+        </div>
+        <div id="counter-section" class="w-fit h-[63px] lg:h-[94px] text-[353535] font-sans text-center">
+          <h2 class="counter text-[20px] lg:text-[32px] font-semibold" data-target="10000" dir="ltr">+0</h2>
+          <div class="text-[14px] lg:text-[20px] mt-[12px] lg:mt-[16px]">مراکز درمانی</div>
+        </div>
+        <div id="counter-section" class="w-fit h-[63px] lg:h-[94px] text-[353535] font-sans text-center">
+          <h2 class="counter text-[20px] lg:text-[32px] font-semibold" data-target="40000" dir="ltr">+0</h2>
+          <div class="text-[14px] lg:text-[20px] mt-[12px] lg:mt-[16px]">پزشک آماده به خدمت</div>
+        </div>
+        <div id="counter-section" class="w-fit h-[63px] lg:h-[94px] text-[353535] font-sans text-center">
+          <h2 class="counter text-[20px] lg:text-[32px] font-semibold" data-target="15000" dir="ltr">+0</h2>
+          <div class="text-[14px] lg:text-[20px] mt-[12px] lg:mt-[16px]">درمانگر سیار</div>
+        </div>
+      </div>
+      <div
+        class="h-[24px] lg:h-[32px] w-[85%] bg-[#1F7168] absolute bottom-0 left-0 [clip-path:polygon(0_0,100%_0,100%_0%,92%_100%,0_100%)]">
+      </div>
+    </div>
+    <!--end counter-->
 
   </div>
   <!--end wrapper-->
+
+  <script src="src/js/main.js"></script>
 
 </body>
 
