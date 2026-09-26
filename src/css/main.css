@@ -8,3 +8,38 @@
 @theme {
     --font-sans: Sans;
 }
+
+
+.swiper1-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  margin: 0 !important;
+  opacity: 1;
+  background: #C0C0C0;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.swiper1-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 6px;
+  background: #1F7168;
+  border-radius: 999px;
+}
+
+.swiper2-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  margin: 0 !important;
+  opacity: 1;
+  background: #C0C0C0;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+.swiper2-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  height: 6px;
+  background: #1F7168;
+  border-radius: 999px;
+}
