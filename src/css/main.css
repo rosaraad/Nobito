@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: Sans;
-    src: url(src/font/Iranian_Sans.ttf);
+  font-family: Sans;
+  src: url(src/font/Iranian_Sans.ttf);
 }
 
 @theme {
-    --font-sans: Sans;
+  --font-sans: Sans;
 }
 
 .swiper1 .swiper-slide,
@@ -22,8 +22,9 @@
   border-color: #1F7168;
 }
 
-
-.swiper1-pagination .swiper-pagination-bullet {
+.swiper1-pagination .swiper-pagination-bullet,
+.swiper2-pagination .swiper-pagination-bullet,
+.swiper4-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   margin: 0 !important;
@@ -33,24 +34,9 @@
   transition: all 0.3s ease;
 }
 
-.swiper1-pagination .swiper-pagination-bullet-active {
-  width: 24px;
-  height: 6px;
-  background: #1F7168;
-  border-radius: 999px;
-}
-
-.swiper2-pagination .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
-  margin: 0 !important;
-  opacity: 1;
-  background: #C0C0C0;
-  border-radius: 999px;
-  transition: all 0.3s ease;
-}
-
-.swiper2-pagination .swiper-pagination-bullet-active {
+.swiper1-pagination .swiper-pagination-bullet-active,
+.swiper2-pagination .swiper-pagination-bullet-active,
+.swiper4-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 6px;
   background: #1F7168;

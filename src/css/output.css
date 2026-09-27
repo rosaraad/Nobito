@@ -6,10 +6,6 @@
     --font-sans: Sans;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-gray-400: oklch(70.7% 0.022 261.325);
-    --color-gray-500: oklch(55.1% 0.027 264.364);
-    --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -210,9 +206,6 @@
   .z-\[1000\] {
     z-index: 1000;
   }
-  .mx-\[5px\] {
-    margin-inline: 5px;
-  }
   .mx-\[16px\] {
     margin-inline: 16px;
   }
@@ -267,12 +260,6 @@
   .hidden {
     display: none;
   }
-  .h-\[1px\] {
-    height: 1px;
-  }
-  .h-\[5px\] {
-    height: 5px;
-  }
   .h-\[18px\] {
     height: 18px;
   }
@@ -312,6 +299,9 @@
   .h-\[152px\] {
     height: 152px;
   }
+  .h-\[160px\] {
+    height: 160px;
+  }
   .h-\[214px\] {
     height: 214px;
   }
@@ -350,9 +340,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .\!w-\[282px\] {
-    width: 282px !important;
   }
   .\!w-auto {
     width: auto !important;
@@ -408,6 +395,9 @@
   .w-\[282px\] {
     width: 282px;
   }
+  .w-\[294px\] {
+    width: 294px;
+  }
   .w-\[328px\] {
     width: 328px;
   }
@@ -425,9 +415,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .max-w-\[360px\] {
     max-width: 360px;
@@ -510,9 +497,6 @@
   }
   .rounded-\[24px\] {
     border-radius: 24px;
-  }
-  .rounded-\[600px\] {
-    border-radius: 600px;
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -893,7 +877,7 @@
 .swiper-slide:hover {
   border-color: #1F7168;
 }
-.swiper1-pagination .swiper-pagination-bullet {
+.swiper1-pagination .swiper-pagination-bullet, .swiper2-pagination .swiper-pagination-bullet, .swiper4-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   margin: 0 !important;
@@ -902,22 +886,7 @@
   border-radius: 999px;
   transition: all 0.3s ease;
 }
-.swiper1-pagination .swiper-pagination-bullet-active {
-  width: 24px;
-  height: 6px;
-  background: #1F7168;
-  border-radius: 999px;
-}
-.swiper2-pagination .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
-  margin: 0 !important;
-  opacity: 1;
-  background: #C0C0C0;
-  border-radius: 999px;
-  transition: all 0.3s ease;
-}
-.swiper2-pagination .swiper-pagination-bullet-active {
+.swiper1-pagination .swiper-pagination-bullet-active, .swiper2-pagination .swiper-pagination-bullet-active, .swiper4-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 6px;
   background: #1F7168;
