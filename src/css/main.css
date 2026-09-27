@@ -9,6 +9,19 @@
     --font-sans: Sans;
 }
 
+.swiper1 .swiper-slide,
+.swiper2 .swiper-slide {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-slide:hover {
+  border-color: #1F7168;
+}
+
 
 .swiper1-pagination .swiper-pagination-bullet {
   width: 6px;
