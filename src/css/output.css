@@ -240,6 +240,12 @@
   .mt-\[2px\] {
     margin-top: 2px;
   }
+  .mt-\[8\[x\]\] {
+    margin-top: 8[x];
+  }
+  .mt-\[8px\] {
+    margin-top: 8px;
+  }
   .mt-\[9px\] {
     margin-top: 9px;
   }
@@ -405,11 +411,20 @@
   .h-\[152px\] {
     height: 152px;
   }
+  .h-\[158px\] {
+    height: 158px;
+  }
   .h-\[160px\] {
     height: 160px;
   }
   .h-\[168px\] {
     height: 168px;
+  }
+  .h-\[178-x\] {
+    height: 178-x;
+  }
+  .h-\[178px\] {
+    height: 178px;
   }
   .h-\[184px\] {
     height: 184px;
@@ -462,11 +477,17 @@
   .h-\[690px\] {
     height: 690px;
   }
+  .h-\[842px\] {
+    height: 842px;
+  }
   .h-\[1176px\] {
     height: 1176px;
   }
   .h-\[px\] {
     height: px;
+  }
+  .h-fit {
+    height: fit-content;
   }
   .h-full {
     height: 100%;
@@ -528,8 +549,14 @@
   .w-\[88px\] {
     width: 88px;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
   .w-\[104px\] {
     width: 104px;
+  }
+  .w-\[111px\] {
+    width: 111px;
   }
   .w-\[112px\] {
     width: 112px;
@@ -591,6 +618,12 @@
   .w-\[328px\] {
     width: 328px;
   }
+  .w-\[336p\] {
+    width: 336p;
+  }
+  .w-\[336px\] {
+    width: 336px;
+  }
   .w-\[360px\] {
     width: 360px;
   }
@@ -600,6 +633,12 @@
   .w-\[362px\] {
     width: 362px;
   }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[422px\] {
+    width: 422px;
+  }
   .w-\[588px\] {
     width: 588px;
   }
@@ -608,6 +647,21 @@
   }
   .w-\[894px\] {
     width: 894px;
+  }
+  .w-\[900px\] {
+    width: 900px;
+  }
+  .w-\[1000px\] {
+    width: 1000px;
+  }
+  .w-\[1072px\] {
+    width: 1072px;
+  }
+  .w-\[1078\] {
+    width: 1078;
+  }
+  .w-\[1078px\] {
+    width: 1078px;
   }
   .w-\[1198px\] {
     width: 1198px;
@@ -649,6 +703,9 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -666,6 +723,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-\[24px\] {
     gap: 24px;
@@ -688,11 +751,26 @@
   .gap-x-\[24px\] {
     column-gap: 24px;
   }
+  .gap-x-\[32px\] {
+    column-gap: 32px;
+  }
   .gap-x-\[40px\] {
     column-gap: 40px;
   }
+  .gap-x-\[64px\] {
+    column-gap: 64px;
+  }
+  .gap-x-\[88px\] {
+    column-gap: 88px;
+  }
   .gap-x-\[90px\] {
     column-gap: 90px;
+  }
+  .gap-y-\[16px\] {
+    row-gap: 16px;
+  }
+  .gap-y-\[32px\] {
+    row-gap: 32px;
   }
   .gap-y-\[40px\] {
     row-gap: 40px;
@@ -746,6 +824,14 @@
     border-style: var(--tw-border-style);
     border-width: 757575;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-\[1px\] {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-b-\[1px\] {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
@@ -756,6 +842,9 @@
   .border-\[\#757575\] {
     border-color: #757575;
   }
+  .border-\[\#919191\] {
+    border-color: #919191;
+  }
   .border-\[\#A3A3A3\] {
     border-color: #A3A3A3;
   }
@@ -764,6 +853,9 @@
   }
   .border-black {
     border-color: var(--color-black);
+  }
+  .border-t-\[\#919191\] {
+    border-top-color: #919191;
   }
   .bg-\[\#1F7168\] {
     background-color: #1F7168;
@@ -794,6 +886,9 @@
   }
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
+  }
+  .bg-\[1F7168\] {
+    background-color: 1F7168;
   }
   .bg-\[FDFDFD\] {
     background-color: FDFDFD;
@@ -861,6 +956,15 @@
   .py-\[32px\] {
     padding-block: 32px;
   }
+  .py-\[48px\] {
+    padding-block: 48px;
+  }
+  .pt-\[26px\] {
+    padding-top: 26px;
+  }
+  .pr-\[12px\] {
+    padding-right: 12px;
+  }
   .text-center {
     text-align: center;
   }
@@ -885,6 +989,9 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
   }
   .text-\[32px\] {
     font-size: 32px;
@@ -933,8 +1040,20 @@
   .text-\[\#FFE4BC\] {
     color: #FFE4BC;
   }
+  .text-\[\$414141\] {
+    color: $414141;
+  }
+  .text-\[\$F9F9F9\] {
+    color: $F9F9F9;
+  }
   .text-\[353535\] {
     color: 353535;
+  }
+  .text-\[414141\] {
+    color: 414141;
+  }
+  .text-\[F9F9F9\] {
+    color: F9F9F9;
   }
   .text-black {
     color: var(--color-black);
