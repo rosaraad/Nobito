@@ -10,7 +10,9 @@
 }
 
 .swiper1 .swiper-slide,
-.swiper2 .swiper-slide {
+.swiper2 .swiper-slide,
+.swiper3 .swiper-slide,
+.swiper4 .swiper-slide {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
