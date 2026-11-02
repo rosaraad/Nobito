@@ -35,8 +35,3 @@ const observer = new IntersectionObserver((entries, observer) => {
 });
 
 observer.observe(section);
-
-function openMenu(menu) {
-    const submenu = menu.querySelector(".submenu");
-    submenu.classList.toggle("hidden");
-}
