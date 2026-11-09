@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html dir="rtl" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه پزشک</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-[#F5F5F5] w-full min-h-screen overflow-x-hidden">
+    <!--wrapper-->
+    <div class="wrapper w-full max-w-[360px] lg:max-w-[1440px] mx-auto font-sans transition-all duration-300">
+        <!--header-->
+        <!--header(laptop)-->
+        <div class="header-navbar hidden lg:block w-full h-[96px] lg:h-[169px] bg-[#FDFDFD]">
+            <div class="navbar-top flex px-[120px] py-[24px] flex justify-between border-b-[1px] border-[#C0C0C0]">
+                <div class="top-right flex items-center gap-x-[40px]">
+                    <div class="w-[180px] h-[65px]"><a href="../index.html"><img class="w-full h-full"
+                                src="../src/images/logo-1.svg" alt=""></a>
+                    </div>
+                    <div class="flex items-center gap-x-[24px] text-[#757575] text-[16px]">
+                        <div class="hover:brightness-50"><a href="">نوبت دهی مطب</a></div>
+                        <div class="menu relative z-[1000] cursor-pointer" onclick="openMenu(this)">
+                            <span class="hover:brightness-50 transition duration-300" href="">خدمات</span>
+                            <div
+                                class="submenu hidden absolute top-[20px] right-0 mt-4 w-[190px] overflow-hidden rounded-xl bg-white py-2 shadow-lg">
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    خدمات پزشکی در منزل</div>
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    مشاوره غیرحضوری</div>
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    مراکز درمانی</div>
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    نوبت دهی</div>
+                            </div>
+                        </div>
+                        <div class="hover:brightness-50 transition-all duration-300"><a href="">مشاوره آنلاین</a></div>
+                        <div class="hover:brightness-50"><a href="">مجله سلامت</a></div>
+                        <div class="menu relative z-[1000] cursor-pointer" onclick="openMenu(this)">
+                            <span class="hover:brightness-50 transition duration-300" href="">نیکوکاری</span>
+                            <div
+                                class="submenu hidden absolute top-[20px] right-0 mt-4 w-[190px] overflow-hidden rounded-xl bg-white py-2 shadow-lg">
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    درمانگر داوطلب</div>
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    بیشتر بدانید</div>
+                                <div
+                                    class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575] transition duration-200 hover:bg-[#228766]/8 hover:text-[#228766]">
+                                    کمک مالی</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-left flex items-center gap-x-[16px]">
+                    <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-50">
+                        <img class="w-full h-full cursor-pointer" src="../src/images/notification.svg" alt="">
+                    </div>
+                    <div><a class="w-[117px] h-[48px] rounded-[8px] bg-[#1F7168] text-[#F9F9F9] text-[16px] flex justify-center items-center"
+                            href="">ورود/ثبت نام</a></div>
+                </div>
+            </div>
+            <div
+                class="navbar-btm flex items-center justify-between px-[120px] py-[16px] border-b-[1px] border-[#C0C0C0]">
+                <div class="btm-right flex items-center gap-x-[24px]">
+                    <div class="transition-transform hover:animate-bounce hover:brightness-50"><a href=""><img
+                                src="../src/images/instagram-1.svg" alt=""></a></div>
+                    <div class="transition-transform hover:animate-bounce hover:brightness-50"><a href=""><img
+                                src="../src/images/send-1.svg" alt=""></a></div>
+                    <div class="transition-transform hover:animate-bounce hover:brightness-50"><a href=""><img
+                                src="../src/images/youtube-1.svg" alt=""></a></div>
+                    <div class="transition-transform hover:animate-bounce hover:brightness-50"><a href=""><img
+                                src="../src/images/linkedin-1.svg" alt=""></a></div>
+                </div>
+                <div class="btm-left flex items-center gap-x-[24px] text-[#757575] text-[16px]">
+                    <div class="hover:brightness-50"><a href="pages/aboutus.html">درباره ما</a></div>
+                    <div class="hover:brightness-50"><a href="pages/contactus.html">تماس با ما</a></div>
+                    <div class="hover:brightness-50"><a href="">سوالات متداول</a></div>
+                    <div class="flex items-center hover:brightness-50 transition-all duration-300"><img
+                            src="../src/images/location.svg" alt="">+ انتخاب آدرس</div>
+                </div>
+            </div>
+        </div>
+        <!--header(mobile)-->
+        <div
+            class="navbar flex lg:hidden px-[16px] py-[8px] justify-between items-center bg-[#FDFDFD] border-b-[1px] border-[#C0C0C0]">
+            <div class="navbar-right w-[133px] h-[48px]"><img src="src/images/logo-1.svg" alt=""></div>
+            <div class="navbar-left flex justify-between items-center gap-x-[12px]">
+                <div class="w-[24px] h-[24px] flex justify-center items-center"><img src="../src/images/search-dark.svg"
+                        alt="">
+                </div>
+                <div class="w-[24px] h-[24px] flex justify-center items-center menu relative z-[1000] cursor-pointer">
+                    <img src="../src/images/menu.svg" alt="">
+                    <div
+                        class="submenu hidden absolute top-[28px] -left-[15.9px] mt-4 w-[190px] h-screen overflow-hidden bg-white py-2 shadow-lg">
+                        <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">خدمات</div>
+                        <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مشاوره آنلاین</a></div>
+                        <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مجله سلامت</a></div>
+                        <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">نیکوکاری</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div class="main flex px-[120px] py-[48px] justify-between items-center">
+            <div class="main-right w-[648px] h-fit">
+                <div class="main-right-1 w-full h-[192px] flex justify-between gap-x-[20px]">
+                    <div
+                        class="w-[192px] h-[192px] rounded-[400px] border-[1px] border-[#919191] flex justify-center items-center overflow-hidden">
+                        <img class="w-[176px] h-[176px] rounded-[120px]" src="../src/images/placeholder-lightgray.PNG"
+                            alt="">
+                    </div>
+                    <div class="w-[286px] h-[192px] flex flex-col justify-between items-start">
+                        <div class="text-[24px] text-[#414141] font-medium">نام پزشک</div>
+                        <div class="text-[16px] text-[#757575]">تخصص پزشک</div>
+                        <div class="text-[16px] text-[#757575]">شهر محل خدمت</div>
+                        <div class="text-[22px] text-[#414141]">کد نظام پزشکی : ----</div>
+                    </div>
+                    <div class="w-[152px] h-[192px] flex items-end justify-center"><img class="w-full"
+                            src="../src/images/Rate-3.svg" alt=""></div>
+                </div>
+                <div class="main-right-2 w-full h-[225px] mt-[80px]">
+                    <div class="flex items-center justify-between">
+                        <div class="text-[28px] text-[#414141] font-medium">درباره پزشک</div>
+                        <div class="flex items-center gap-x-[8px] text-[16px] text-[#757575] font-normal"><img
+                                src="../src/images/like.svg" alt="">835نفر / از 970 از پزشک راضی بوده اند</div>
+                    </div>
+                    <div class="mt-[24px] text-[#757575] text-[16px] text-justify">لورم ایپسوم متن ساختگی با تولید سادگی
+                        نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                        است، چاپگره ا و متون بلکه روزنامه و مجله در ستون و سطرآنچنان لازم است، و برای شرایط فعلی
+                        تکنولوژی مورد نیاز و کاربرد های متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در
+                        شصت.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                        گرافیک است، چاپگرها و متونبلکه روزنامه و مجله در ستون و سطرآنچنان لازم است، و برای شرایط
+                        فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارها کاربردی می باشد.</div>
+                </div>
+                <div class="main-right-3 w-full h-[158px] mt-[44px]">
+                    <div class="flex gap-x-[8px] items-center">
+                        <div class="w-[40px] h-[40px] flex justify-center items-center"><img class="w-full h-full"
+                                src="../src/images/healthcare.svg" alt=""></div>
+                        <div class="text-[#919191] text-[20px]">تخصص پزشکی : </div>
+                        <div class="text-[#1F7168] text-[20px]">نام تخصص</div>
+                    </div>
+                    <div class="flex flex-wrap gap-[16px] justify-center mt-[40px]">
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                        <div
+                            class="w-fit h-[31px] rounded-[200px] px-[12px] border-[1px] border-[#757575] text-[14px] text-[#757575] flex items-center justify-center hover:bg-[#dfe0e3] transition duration-200">
+                            تگ تخصصی</div>
+                    </div>
+                </div>
+                <div class="main-right-4 w-full h-[387px] mt-[40px] border-y-[1px] border-y-[#C0C0C0] py-[40px]">
+                    <div class="text-[28px] text-[#414141]">موقعیت مکانی مطب</div>
+                    <div class="mt-[24px] flex justify-between items-center gap-x-[16px]">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Tehran,Iran" target="_blank">
+                            <div
+                                class="w-[144px] h-[240px] rounded-[200px] border-[1px] border-[#919191] flex items-center justify-center">
+                                <img class="w-[129px] h-[224px]" src="../src/images/map.svg" alt="">
+                            </div>
+                        </a>
+                        <div>
+                            <div class="text-[24px] text-[#414141]">آدرس :</div>
+                            <div class="text-[16px] text-[#757575] mt-[16px] text-justify">لورم ایپسوم متن ساختگی با
+                                تولید سادگی نامفهوم از صنعت چاپ، و با
+                                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+                                ستون و سطرآنچنان لازم است، و برای شرایط فعلی تکنولوژی مورد.</div>
+                            <div class="text-[20px] text-[#757575] mt-[24px]"><span
+                                    class="text-[24px] text-[#414141]">تلفن :</span> 021-83937848 | 021-9389837</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-right-5 w-full h-[213px] mt-[40px]">
+                    <div class="text-[#414141] text-[28px]">تجربیات کاربران</div>
+                    <div class="text-[#757575] text-[16px] text-justify mt-[40px]">در ادامه می‌توانید تجربه مراجعه‌ی
+                        کاربران دیگر به دکتر بهروز مقدادی را بخوانید.در صورتی که شما
+                        هم از بیماران دکتر بهروز مقدادی بوده‌اید می‌توانید نظر خود را ثبت کنید.</div>
+                    <button type="submit"
+                        class="w-[157px] h-[48px] text-[#F9F9F9] bg-[#1F7168] rounded-[8px] mt-[32px] flex justify-center items-center gap-x-[8px] cursor-pointer">ثبت
+                        بازخورد<img src="../src/images/arrow-left-white.svg" alt=""></button>
+                </div>
+                <div
+                    class="main-right-6 w-full h-[389px] p-[24px] mt-[48px] bg-[#FDFDFD] rounded-[24px] border-[1px] border-[#C0C0C0]">
+                    <div class="text-[16px] text-[#414141] text-justify">از میان 14865 کاربر که تحت درمان دکتر بهرام
+                        میرزایی قرار گرفته اند ، 1325 کاربر این پزشک را
+                        پیشنهاد می کنند.</div>
+                    <div class="w-full h-[168px] mt-[24px] flex gap-x-[24px] items-center justify-between">
+                        <div class="circle w-[168px] h-[168px] shrink-0  rounded-full flex justify-center items-center"
+                            style="background: conic-gradient(#1F7168 0%, #D4D4D4 0%);">
+                            <div
+                                class="w-[135px] h-[135px] shrink-0  bg-white rounded-full flex justify-center items-center text-[28px] font-bold text-[#414141]">
+                                <span id="circle-percent">۰</span>٪
+                            </div>
+                        </div>
+                        <div class="w-[1px] h-[168px] bg-[#C0C0C0]"></div>
+                        <div class="pole w-[390px] h-[168px] flex flex-col justify-between items-center">
+                            <div class="pole-item w-full flex items-center justify-between">
+                                <div class="text-[14px] text-[#414141]">زمان انتظار در مطب</div>
+                                <div class="w-[263px] h-[11px] bg-[#D4D4D4] rounded-full overflow-hidden">
+                                    <div class="progress-bar h-full w-0 bg-[#1F7168] rounded-full" data-target="62">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pole-item w-full flex items-center justify-between">
+                                <div class="text-[14px] text-[#414141]">تشخیص درست</div>
+                                <div class="w-[263px] h-[11px] bg-[#D4D4D4] rounded-full overflow-hidden">
+                                    <div class="progress-bar h-full w-0 bg-[#1F7168] rounded-full" data-target="70">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pole-item w-full flex items-center justify-between">
+                                <div class="text-[14px] text-[#414141]">امکانات رفاهی</div>
+                                <div class="w-[263px] h-[11px] bg-[#D4D4D4] rounded-full overflow-hidden">
+                                    <div class="progress-bar h-full w-0 bg-[#1F7168] rounded-full" data-target="80">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pole-item w-full flex items-center justify-between">
+                                <div class="text-[14px] text-[#414141]">نظافت مطب</div>
+                                <div class="w-[263px] h-[11px] bg-[#D4D4D4] rounded-full overflow-hidden">
+                                    <div class="progress-bar h-full w-0 bg-[#1F7168] rounded-full" data-target="68">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pole-item w-full flex items-center justify-between">
+                                <div class="text-[14px] text-[#414141]">رفتار مناسب</div>
+                                <div class="w-[263px] h-[11px] bg-[#D4D4D4] rounded-full overflow-hidden">
+                                    <div class="progress-bar h-full w-0 bg-[#1F7168] rounded-full" data-target="90">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[600px] h-[1.5px] bg-[#C0C0C0] mt-[40px]"></div>
+                    <div class="flex items-center justify-between mt-[24px]">
+                        <div class="text-[#414141] text-[20px]">۷۰ درصد کاربران این پزشک را پیشنهاد می‌کنند</div>
+                        <img src="../src/images/Rate-3.svg" alt="">
+                    </div>
+                </div>
+                <div
+                    class="main-right-7 w-full h-fit p-[24px] mt-[40px] bg-[#FDFDFD] rounded-[24px] border-[1px] border-[#C0C0C0]">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-x-[16px]">
+                            <div class="w-[80px] h-[80px] rounded-[200px] overflow-clip"><img class="w-full h-full" src="../src/images/person.jpg" alt=""></div>
+                            <div class="w-[185px] h-[67px] flex flex-col justify-between">
+                                <div class="text-[22px] text-[#414141]">نام کاربر</div>
+                                <div class="text-[14px] text-[#757575]">۱۴۰۲/۱۰/۰۲</div>
+                            </div>
+                        </div>
+                        <div class="w-[133px] h-[84px] flex flex-col justify-between">
+                            <div class="w-[122px] h-[34px] rounded-[200px] border-[1px] border-[#1F7168] flex items-center justify-center gap-x-[8px] text-[#1F7168] text-[14px]"><img class="w-[24px] h-[24px]" src="../src/images/frame.svg" alt="">نوبت آنلاین</div>
+                            <div class="text-[22px] text-[#414141] flex items-center justify-end gap-x-[6px]">۴<img class="w-[24px] h-[24px]" src="../src/images/star.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w-full min-h-[25px] text-justify text-[#757575] text-[16px] mt-[24px]">تشخیص دکتر و تجویز دارو فوق العاده هستش سپاس فراوان</div>
+                    <div class="w-[600px] h-[1.5px] bg-[#C0C0C0] mt-[24px]"></div>
+                    <div class="flex items-center justify-between mt-[24px]">
+                        <div class="flex items-center gap-x-[12px]">
+                            <img class="w-[24px] h-[24px]" src="../src/images/Smile vector.svg" alt="">
+                            <div class="text-[#1F7168] text-[16px]">این پزشک را پیشنهاد می‌کنم</div>
+                        </div>
+                        <div class="flex items-center gap-x-[8px]">
+                            <img class="w-[24px] h-[24px]" src="../src/images/clock.svg" alt="">
+                            <div class="text-[#757575] text-[16px]">زمان انتظار : ۰-۱۵ دقیقه</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="main-right-8 w-full h-fit p-[24px] mt-[40px] bg-[#FDFDFD] rounded-[24px] border-[1px] border-[#C0C0C0]">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-x-[16px]">
+                            <div class="w-[80px] h-[80px] rounded-[200px] overflow-clip"><img class="w-full h-full" src="../src/images/person.jpg" alt=""></div>
+                            <div class="w-[185px] h-[67px] flex flex-col justify-between">
+                                <div class="text-[22px] text-[#414141]">نام کاربر</div>
+                                <div class="text-[14px] text-[#757575]">۱۴۰۲/۱۰/۰۲</div>
+                            </div>
+                        </div>
+                        <div class="w-[133px] h-[84px] flex flex-col justify-between">
+                            <div class="w-[122px] h-[34px] rounded-[200px] border-[1px] border-[#1F7168] flex items-center justify-center gap-x-[8px] text-[#1F7168] text-[14px]"><img class="w-[24px] h-[24px]" src="../src/images/frame.svg" alt="">نوبت آنلاین</div>
+                            <div class="text-[22px] text-[#414141] flex items-center justify-end gap-x-[6px]">۲<img class="w-[24px] h-[24px]" src="../src/images/star.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w-full min-h-[25px] text-justify text-[#757575] text-[16px] mt-[24px]">متاسفانه آنچنان توجهی به آزمایش نداشتند بنظرم که باعث عدم نتیجعه گیری بنده شد و در مشاوره تلفنی وقت کافی برای بنده  نمی گداشتند من در کل راضی نیستم و از مشاوره تلفنی با ایشان رضایت ندارم</div>
+                    <div class="w-[600px] h-[1.5px] bg-[#C0C0C0] mt-[24px]"></div>
+                    <div class="flex items-center justify-between mt-[24px]">
+                        <div class="flex items-center gap-x-[12px]">
+                            <img class="w-[24px] h-[24px]" src="../src/images/sad vector.svg" alt="">
+                            <div class="text-[#C71A1A] text-[16px]">این پزشک را پیشنهاد نمی‌کنم</div>
+                        </div>
+                        <div class="flex items-center gap-x-[8px]">
+                            <img class="w-[24px] h-[24px]" src="../src/images/clock.svg" alt="">
+                            <div class="text-[#757575] text-[16px]">زمان انتظار : ۰-۱۵ دقیقه</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[648px] h-[48px] rounded-[8px] border-[1px] border-[#292D32] text-[#121212] flex items-center justify-center mt-[40px] hover:bg-[#1F7168] hover:text-[#F9F9F9] hover:border-none transition duration-200 cursor-pointer">مشاهده بیشتر</div>
+            </div>
+            <div class="main-left w-[520px] h-fit bg-amber-400"></div>
+        </div>
+        <!--end main-->
+
+        <!--footer-->
+        <div
+            class="footer lg:w-[1440px] h-fit w-[360px] bg-[#FDFDFD] lg:px-[120px] lg:py-[48px] px-[16px] py-[24px] lg:mt-[144px] mt-[72px] mx-auto">
+            <div class="ft-1 lg:flex block items-center gap-x-[24px]">
+                <div>
+                    <a href="../index.html"><img class="w-[111px] h-[178px] lg:block hidden"
+                            src="../src/images/logo-2.svg" alt=""></a>
+                    <a href="../index.html"><img class="w-[104px] h-[104px] mx-auto block lg:hidden"
+                            src="../src/images/logo-3.svg" alt=""></a>
+                </div>
+                <div class="lg:w-[1078px] lg:h-[178px] w-[328px] h-fit">
+                    <div class="text-[#414141] text-[20px] font-bold lg:mt-[11px] mt-[24px] lg:text-right text-center">
+                        تلاش ما
+                        دسترسی آسان تر شما به خدمات پزشکی است</div>
+                    <div class="text-[#757575] lg:text-[16px] text-[12px] mt-[24px] text-justify">با افتخار به شما
+                        پلتفرم نوبیتو را
+                        معرفی میکنیم.
+                        ما با افتخار به عنوان یک پلتفرم جامع ارائه دهنده خدمات پزشکی مثل نوبت‌دهی آنلاین، خدمات مشاوره
+                        حضوری و
+                        غیرحضوری و خدمات پزشکی در منزل را ارائه می‌دهیم. از اختصاص نوبت‌های پزشکی تا امکان مشاوره آنلاین
+                        و حضوری، همه
+                        چیز در اینجاست تا به شما یک تجربه
+                        درمانی راحت و بی دردسر ارائه دهیم.تمام تلاش و سعی ما بر این باور است که دغدغه های دسترسی و درمان
+                        را برای
+                        بیماران و همراهانشان کمتر کنیم،امیدواریم نوبیتو در
+                        روزهای ناخوش احوالی همراه و همیار شما باشد.</div>
+                </div>
+            </div>
+            <div class="ft-2 lg:flex block justify-between mt-[48px]">
+                <!--desktop-->
+                <div class="ft-2-right lg:flex hidden gap-x-[64px]">
+                    <div class="ft-2-block">
+                        <div class="ft-2-title text-[22px] text-[#414141] font-bold">نوبیتو</div>
+                        <div
+                            class="ft-2-items text-[16px] text-[#757575] mt-[32px] w-fit h-fit flex flex-col gap-y-[16px]">
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">سوالات متداول</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">تماس با ما</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">میثاق نام</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">درباره ما</a></div>
+                        </div>
+                    </div>
+                    <div class="ft-2-block">
+                        <div class="ft-2-title text-[22px] text-[#414141] font-bold">خدمات</div>
+                        <div
+                            class="ft-2-items text-[16px] text-[#757575] mt-[32px] w-fit h-fit flex flex-col gap-y-[16px]">
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">خدمات پزشکی در منزل</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">مشاوره غیرحضوری</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">مراکز درمانی</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">نوبت دهی</a></div>
+                        </div>
+                    </div>
+                    <div class="ft-2-block">
+                        <div class="ft-2-title text-[22px] text-[#414141] font-bold">نیکوکاری</div>
+                        <div
+                            class="ft-2-items text-[16px] text-[#757575] mt-[32px] w-fit h-fit flex flex-col gap-y-[16px]">
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">درمانگر داوطلب</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">بیشتر بدانید</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">کمک مالی</a></div>
+                        </div>
+                    </div>
+                    <div class="ft-2-block">
+                        <div class="ft-2-title text-[22px] text-[#414141] font-bold">پشتیبانی</div>
+                        <div
+                            class="ft-2-items text-[16px] text-[#757575] mt-[32px] w-fit h-fit flex flex-col gap-y-[16px]">
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">شبکه های اجتماعی</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">واحد انفورماتیک</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">حریم شخصی</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="">تماس با ما</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile-->
+                <div class="block lg:hidden w-[328px]">
+                    <details class="text-[#414141] w-full h-fit">
+                        <summary class="text-[16px] text-[#414141] h-[40px] leading-[40px]">نوبیتو</summary>
+                        <div class="text-[14px] text-[#757575]">
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">سوالات متداول</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">تماس با ما</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">میثاق نام</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">درباره ما</a></div>
+                        </div>
+                    </details>
+                    <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
+                    <details class="text-[#414141]">
+                        <summary class="text-[16px] text-[#414141] h-[40px] leading-[40px]">خدمات</summary>
+                        <div class="text-[14px] text-[#757575]">
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">خدمات پزشکی در منزل</a>
+                            </div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">مشاوره غیرحضوری</a>
+                            </div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">مراکز درمانی</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">نوبت دهی</a></div>
+                        </div>
+                    </details>
+                    <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
+                    <details class="text-[#414141]">
+                        <summary class="text-[16px] text-[#414141] h-[40px] leading-[40px]">نیکوکاری</summary>
+                        <div class="text-[14px] text-[#757575]">
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">درمانگر داوطلب</a>
+                            </div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">بیشتر بدانید</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">کمک مالی</a></div>
+                        </div>
+                    </details>
+                    <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
+                    <details class="text-[#414141]">
+                        <summary class="text-[16px] text-[#414141] h-[40px] leading-[40px]">پشتیبانی</summary>
+                        <div class="text-[14px] text-[#757575]">
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">شبکه های اجتماعی</a>
+                            </div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">واحد انفورماتیک</a>
+                            </div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">حریم شخصی</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">تماس با ما</a></div>
+                        </div>
+                    </details>
+                    <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
+
+                </div>
+                <div class="news lg:mt-[70px] mt-[40px] lg:w-[452px] lg:h-[140px] w-[326px] h-[208px]">
+                    <div class="text-[16px] text-[#414141]">خبرنامه</div>
+                    <div class="text-[12px] text-[#757575] mt-[8px]">برای اینکه از جدیدترین اخبار نوبیتو جا نمونید...
+                    </div>
+                    <div class="mt-[16px] lg:flex block lg:gap-x-[16px]">
+                        <div>
+                            <div
+                                class="w-full max-w-[336px] h-[48px] border-[1px] border-[#919191] rounded-[8px] overflow-hidden">
+                                <input class="w-full h-full pr-[12px]" type="email" name="" id=""
+                                    placeholder="ایمیل خود را اینجا وارد کنید">
+                            </div>
+                            <div class="text-[#919191] text-[12px] lg:mt-[8px] mt-[16px]">تلاش ما ارائه بهترین خدمات
+                                ممکن به شما همراهان
+                                نوبیتو است.
+                            </div>
+                        </div>
+                        <button
+                            class="w-[100px] h-[48px] rounded-[8px] bg-[#1F7168] text-[#F9F9F9] text-[16px] flex justify-evenly items-center cursor-pointer mt-0 mt-[16px]">ارسال<img
+                                src="../src/images/arrow-left-white.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-3 lg:mt-[48px] mt-[52px] lg:flex block justify-between">
+                <div class="ft-3-right flex flex-col lg:gap-y-[32px] gap-y-[24px]">
+                    <div class="flex items-center gap-x-[8px]">
+                        <img class="transition-transform hover:animate-bounce" src="../src/images/call-calling.svg"
+                            alt="">
+                        <div class="text-[#414141] lg:text-[16px] text-[14px]">تماس با پشتیبانی : ۱۲۳۴۵۶۷۸-۰۲۱ |
+                            ۱۲۳۴۵۶۷۸-۰۲۱</div>
+                    </div>
+                    <div class="flex items-center gap-x-[8px]">
+                        <img class="transition-transform hover:animate-bounce" src="../src/images/sms.svg" alt="">
+                        <div class="text-[#414141] lg:text-[16px] text-[14px]">نشانی پست الکترونیک : nobito@yahoo.com
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-[8px]">
+                        <img class="transition-transform hover:animate-bounce" src="../src/images/building-4.svg"
+                            alt="">
+                        <div class="text-[#414141] lg:text-[16px] text-[14px]">نشانی : تهران ...
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-3-left w-[422px] h-[158px] lg:mt-0 mt-[46px]">
+                    <div class="flex items-center gap-x-[24px]">
+                        <img class="lg:w-[80px] lg:h-[80px] w-[64px] h-[64px] transition-transform hover:animate-bounce"
+                            src="../src/images/cetificate.svg" alt="">
+                        <img class="lg:w-[80px] lg:h-[80px] w-[64px] h-[64px] transition-transform hover:animate-bounce"
+                            src="../src/images/cetificate (1).svg" alt="">
+                        <img class="lg:w-[80px] lg:h-[80px] w-[64px] h-[64px] transition-transform hover:animate-bounce"
+                            src="../src/images/cetificate (2).svg" alt="">
+                        <img class="lg:w-[80px] lg:h-[80px] w-[64px] h-[64px] transition-transform hover:animate-bounce"
+                            src="../src/images/cetificate (3).svg" alt="">
+                    </div>
+                    <div
+                        class="lg:w-[422px] w-[293px] lg:text-justify text-center h-fit text-[#757575] text-[16px] mt-[24px]">
+                        لورم
+                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                        صنعت چاپ،
+                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه</div>
+                </div>
+            </div>
+            <div
+                class="ft-4 lg:w-[1200px] w-[328px] h-[56px] lg:border-t-[1px] lg:border-t-[#919191] mt-[48px] pt-[26px] lg:flex lg:flex-row flex flex-col-reverse items-center justify-between">
+                <div
+                    class="ft-4-right text-[#919191] text-[16px] lg:text-right text-center lg:border-0 border-t-[1px] border-t-[#919191] pt-[10px]">
+                    تمامی حقوق این وبسایت متعلق به شرکت نوبیتو است</div>
+                <div
+                    class="ft-4-left flex items-center lg:gap-x-[16px] gap-x-[48px] lg:justify-end justify-center lg:mt-0 mt-[48px] mb-[15px]">
+                    <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-75"><a
+                            href=""><img class="w-full h-full" src="../src/images/instagram-2.svg" alt=""></a></div>
+                    <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-75"><a
+                            href=""><img class="w-full h-full" src="../src/images/send-2.svg" alt=""></a></div>
+                    <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-75"><a
+                            href=""><img class="w-full h-full" src="../src/images/youtube-2.svg" alt=""></a></div>
+                    <div class="w-[32px] h-[32px] transition-transform hover:animate-bounce hover:brightness-75"><a
+                            href=""><img class="w-full h-full" src="../src/images/linkedin-2.svg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <!--end footer-->
+    </div>
+    <!--end wrapper-->
+    <script src="../src/js/main.js"></script>
+</body>
+
+</html>
