@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @font-face {
   font-family: Sans;
   src: url(src/font/Iranian_Sans.ttf);
@@ -13,7 +14,8 @@
 .swiper2 .swiper-slide,
 .swiper3 .swiper-slide,
 .swiper4 .swiper-slide,
-.swiper5 .swiper-slide {
+.swiper5 .swiper-slide,
+.swiper6 .swiper-slide {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
@@ -28,7 +30,8 @@
 .swiper1-pagination .swiper-pagination-bullet,
 .swiper2-pagination .swiper-pagination-bullet,
 .swiper4-pagination .swiper-pagination-bullet,
-.swiper5-pagination .swiper-pagination-bullet {
+.swiper5-pagination .swiper-pagination-bullet,
+.swiper6-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   margin: 0 !important;
@@ -41,7 +44,8 @@
 .swiper1-pagination .swiper-pagination-bullet-active,
 .swiper2-pagination .swiper-pagination-bullet-active,
 .swiper4-pagination .swiper-pagination-bullet-active,
-.swiper5-pagination .swiper-pagination-bullet-active {
+.swiper5-pagination .swiper-pagination-bullet-active,
+.swiper6-pagination .swiper-pagination-bullet-active {
   width: 24px;
   height: 6px;
   background: #1F7168;
@@ -100,4 +104,48 @@
 .slide5:hover {
   border-color: #1F7168;
   transition: all 0.3s ease;
+}
+
+#persian-calendar {
+  font-family: "Vazirmatn", sans-serif;
+  background-image: none;
+  background-color: #fff;
+
+}
+
+#persian-calendar .calendar-day {
+  min-height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  cursor: default;
+  transition: background 0.2s, color 0.2s;
+  font-size: 20px;
+  color: #414141;
+}
+
+#persian-calendar .calendar-day:hover:not(.empty) {
+  background: rgba(45, 128, 119, 0.13);
+}
+
+#persian-calendar .calendar-day.selected {
+  background: #2e8178;
+  color: white;
+}
+
+#persian-calendar .calendar-day.today:not(.selected) {
+  outline: 1px solid #2e8178;
+  outline-offset: -5px;
+}
+
+#persian-calendar .calendar-day.empty {
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  #persian-calendar .calendar-day {
+    min-height: 48px;
+    font-size: 1.25rem;
+  }
 }
