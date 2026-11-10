@@ -6,7 +6,6 @@
     --font-sans: Sans;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-teal-700: oklch(51.1% 0.096 186.391);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-stone-400: oklch(70.9% 0.01 56.259);
@@ -565,6 +564,9 @@
   .w-\[1px\] {
     width: 1px;
   }
+  .w-\[2px\] {
+    width: 2px;
+  }
   .w-\[18px\] {
     width: 18px;
   }
@@ -664,11 +666,17 @@
   .w-\[234px\] {
     width: 234px;
   }
+  .w-\[240px\] {
+    width: 240px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
   .w-\[253px\] {
     width: 253px;
+  }
+  .w-\[256px\] {
+    width: 256px;
   }
   .w-\[258px\] {
     width: 258px;
@@ -1008,9 +1016,6 @@
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
@@ -1100,9 +1105,6 @@
   }
   .pt-\[26px\] {
     padding-top: 26px;
-  }
-  .pt-\[48px\] {
-    padding-top: 48px;
   }
   .pr-5 {
     padding-right: calc(var(--spacing) * 5);
