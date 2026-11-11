@@ -2,7 +2,7 @@
 
 A modern doctor appointment booking website built using HTML and Tailwind CSS.
 
-This project focuses on translating a Figma design into a clean, modern, and user-friendly doctor appointment website.
+This project focuses on translating a complete Figma design into a clean, modern, and user-friendly doctor appointment website.
 
 ## 🔗 Live Demo
 
