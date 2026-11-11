@@ -1,4 +1,4 @@
-# 🩺 Nobito – Online Doctor Appointment Website
+# 🩺 Nobito – Doctor Appointment Website
 
 A modern doctor appointment booking website built using HTML and Tailwind CSS.
 
