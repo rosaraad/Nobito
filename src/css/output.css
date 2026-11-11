@@ -441,6 +441,9 @@
   .h-\[112px\] {
     height: 112px;
   }
+  .h-\[115px\] {
+    height: 115px;
+  }
   .h-\[120px\] {
     height: 120px;
   }
@@ -564,9 +567,6 @@
   .w-\[1px\] {
     width: 1px;
   }
-  .w-\[2px\] {
-    width: 2px;
-  }
   .w-\[18px\] {
     width: 18px;
   }
@@ -621,6 +621,9 @@
   .w-\[112px\] {
     width: 112px;
   }
+  .w-\[115px\] {
+    width: 115px;
+  }
   .w-\[117px\] {
     width: 117px;
   }
@@ -674,9 +677,6 @@
   }
   .w-\[253px\] {
     width: 253px;
-  }
-  .w-\[256px\] {
-    width: 256px;
   }
   .w-\[258px\] {
     width: 258px;
