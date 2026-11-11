@@ -80,8 +80,8 @@
                                 src="../src/images/linkedin-1.svg" alt=""></a></div>
                 </div>
                 <div class="btm-left flex items-center gap-x-[24px] text-[#757575] text-[16px]">
-                    <div class="hover:brightness-50"><a href="pages/aboutus.html">درباره ما</a></div>
-                    <div class="hover:brightness-50"><a href="pages/contactus.html">تماس با ما</a></div>
+                    <div class="hover:brightness-50"><a href="aboutus.html">درباره ما</a></div>
+                    <div class="hover:brightness-50"><a href="contactus.html">تماس با ما</a></div>
                     <div class="hover:brightness-50"><a href="">سوالات متداول</a></div>
                     <div class="flex items-center hover:brightness-50 transition-all duration-300"><img
                             src="../src/images/location.svg" alt="">+ انتخاب آدرس</div>
@@ -96,16 +96,37 @@
                 <div class="w-[24px] h-[24px] flex justify-center items-center">
                     <img src="../src/images/search-dark.svg" alt="">
                 </div>
-                <div class="w-[24px] h-[24px] flex justify-center items-center menu relative z-[1000] cursor-pointer">
-                    <img src="../src/images/menu.svg" alt="">
-                    <div
-                        class="submenu hidden absolute top-[28px] -left-[15.9px] mt-4 w-[190px] h-screen overflow-hidden bg-white py-2 shadow-lg">
-                        <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">خدمات</div>
-                        <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مشاوره آنلاین</a></div>
-                        <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مجله سلامت</a></div>
-                        <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">نیکوکاری</div>
+                <div class="menu relative z-[1000]">
+                    <button id="menuBtn" class="w-[24px] h-[24px] cursor-pointer">
+                        <img src="../src/images/menu.svg" alt="menu">
+                    </button>
+
+                    <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-[999]">
                     </div>
 
+                    <div id="submenu" class="fixed top-0 right-0 w-[260px] h-full bg-white shadow-lg z-[1000] 
+        translate-x-full transition-transform duration-300 ease-in-out">
+
+                        <div class="flex justify-between items-center p-5 border-b">
+                            <span class="text-[#1F7168]">منوی نوبیتو</span>
+                            <button id="closeMenu" class="text-xl">×</button>
+                        </div>
+
+                        <div class="flex flex-col py-3">
+                            <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                                <a href="">خدمات</a>
+                            </div>
+                            <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                                <a href="">مشاوره آنلاین</a>
+                            </div>
+                            <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                                <a href="">مجله سلامت</a>
+                            </div>
+                            <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                                <a href="">نیکوکاری</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -857,9 +878,10 @@
                         <div
                             class="ft-2-items text-[16px] text-[#757575] mt-[32px] w-fit h-fit flex flex-col gap-y-[16px]">
                             <div class="ft-2-item hover:text-[#1F7168]"><a href="">سوالات متداول</a></div>
-                            <div class="ft-2-item hover:text-[#1F7168]"><a href="pages/contactus.html">تماس با ما</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="contactus.html">تماس با ما</a>
+                            </div>
                             <div class="ft-2-item hover:text-[#1F7168]"><a href="">میثاق نام</a></div>
-                            <div class="ft-2-item hover:text-[#1F7168]"><a href="pages/aboutus.html">درباره ما</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="aboutus.html">درباره ما</a></div>
                         </div>
                     </div>
                     <div class="ft-2-block">
@@ -888,7 +910,8 @@
                             <div class="ft-2-item hover:text-[#1F7168]"><a href="">شبکه های اجتماعی</a></div>
                             <div class="ft-2-item hover:text-[#1F7168]"><a href="">واحد انفورماتیک</a></div>
                             <div class="ft-2-item hover:text-[#1F7168]"><a href="">حریم شخصی</a></div>
-                            <div class="ft-2-item hover:text-[#1F7168]"><a href="pages/contactus.html">تماس با ما</a></div>
+                            <div class="ft-2-item hover:text-[#1F7168]"><a href="contactus.html">تماس با ما</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -899,10 +922,12 @@
                         <div class="text-[14px] text-[#757575]">
                             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">سوالات متداول</a>
                             </div>
-                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="contactus.html">تماس با
+                                    ما</a>
                             </div>
                             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">میثاق نام</a></div>
-                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/aboutus.html">درباره ما</a></div>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="aboutus.html">درباره
+                                    ما</a></div>
                         </div>
                     </details>
                     <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
@@ -940,7 +965,8 @@
                             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">واحد انفورماتیک</a>
                             </div>
                             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">حریم شخصی</a></div>
-                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a>
+                            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a
+                                    href="pages/contactus.html">تماس با ما</a>
                             </div>
                         </div>
                     </details>

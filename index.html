@@ -94,16 +94,37 @@
       <div class="navbar-left flex justify-between items-center gap-x-[12px]">
         <div class="w-[24px] h-[24px] flex justify-center items-center"><img src="src/images/search-dark.svg" alt="">
         </div>
-        <div class="w-[24px] h-[24px] flex justify-center items-center menu relative z-[1000] cursor-pointer">
-          <img src="src/images/menu.svg" alt="">
-          <div
-            class="submenu hidden absolute top-[28px] -left-[15.9px] mt-4 w-[190px] h-screen overflow-hidden bg-white py-2 shadow-lg">
-            <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">خدمات</div>
-            <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مشاوره آنلاین</a></div>
-            <div class="subitem px-5 py-3 text-sm text-[#757575]"><a href="">مجله سلامت</a></div>
-            <div class="subitem cursor-pointer px-5 py-3 text-sm text-[#757575]">نیکوکاری</div>
+        <div class="menu relative z-[1000]">
+          <button id="menuBtn" class="w-[24px] h-[24px] cursor-pointer">
+            <img src="src/images/menu.svg" alt="menu">
+          </button>
+
+          <div id="menuOverlay" class="hidden fixed inset-0 bg-black/30 z-[999]">
           </div>
 
+          <div id="submenu" class="fixed top-0 right-0 w-[260px] h-full bg-white shadow-lg z-[1000] 
+        translate-x-full transition-transform duration-300 ease-in-out">
+
+            <div class="flex justify-between items-center p-5 border-b">
+              <span class="text-[#1F7168]">منوی نوبیتو</span>
+              <button id="closeMenu" class="text-xl">×</button>
+            </div>
+
+            <div class="flex flex-col py-3">
+              <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                <a href="">خدمات</a>
+              </div>
+              <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                <a href="">مشاوره آنلاین</a>
+              </div>
+              <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                <a href="">مجله سلامت</a>
+              </div>
+              <div class="px-5 py-3 text-sm text-[#757575] cursor-pointer">
+                <a href="">نیکوکاری</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -424,7 +445,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-1.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-1.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -457,7 +479,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px]  rounded-full object-contain" src="src/images/counsellor-2.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px]  rounded-full object-contain" src="src/images/counsellor-2.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -490,7 +513,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-3.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-3.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -523,7 +547,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-4.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-4.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -556,7 +581,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-5.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-5.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -589,7 +615,8 @@
               href="pages/doctor_profile.html">
               <div
                 class="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto border-[2px] border-[#A3A3A3] flex justify-center items-center">
-                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-6.png" alt="doctor photo">
+                <img class="w-[104px] h-[104px] rounded-full object-contain" src="src/images/counsellor-6.png"
+                  alt="doctor photo">
               </div>
               <div class="famous-line-1 flex items-center gap-x-[8px] w-fit mx-auto mt-[16px]">
                 <div class="famous-name text-[16px] text-[#414141] font-bold">نام پزشک</div>
@@ -1255,7 +1282,8 @@
           <summary class="text-[16px] text-[#414141] h-[40px] leading-[40px]">نوبیتو</summary>
           <div class="text-[14px] text-[#757575]">
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">سوالات متداول</a></div>
-            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a></div>
+            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a>
+            </div>
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">میثاق نام</a></div>
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/aboutus.html">درباره ما</a></div>
           </div>
@@ -1286,7 +1314,8 @@
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">شبکه های اجتماعی</a></div>
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">واحد انفورماتیک</a></div>
             <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="">حریم شخصی</a></div>
-            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a></div>
+            <div class="hover:text-[#1F7168] h-[40px] leading-[40px]"><a href="pages/contactus.html">تماس با ما</a>
+            </div>
           </div>
         </details>
         <div class="block h-px bg-[#CBCBCB] my-[5px]"></div>
@@ -1378,7 +1407,7 @@
       spaceBetween: 21,
       grabCursor: true,
       speed: 500,
-      loop:true,
+      loop: true,
 
       navigation: {
         nextEl: '.swiper1-button-next',
@@ -1407,7 +1436,7 @@
       spaceBetween: 21,
       grabCursor: true,
       speed: 500,
-      loop:true,
+      loop: true,
 
       navigation: {
         nextEl: '.swiper2-button-next',
@@ -1448,7 +1477,7 @@
       spaceBetween: 21,
       grabCursor: true,
       speed: 500,
-      loop:true,
+      loop: true,
 
       navigation: {
         nextEl: '.swiper4-button-next',

@@ -1,5 +1,29 @@
 
 // =====================================
+// menu
+// =====================================
+
+const menuBtn = document.getElementById("menuBtn");
+const closeMenu = document.getElementById("closeMenu");
+const submenu = document.getElementById("submenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+function openMenu() {
+    submenu.classList.remove("translate-x-full");
+    menuOverlay.classList.remove("hidden");
+}
+
+function closeMenuFunc() {
+    submenu.classList.add("translate-x-full");
+    menuOverlay.classList.add("hidden");
+}
+
+menuBtn.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeMenuFunc);
+menuOverlay.addEventListener("click", closeMenuFunc);
+
+
+// =====================================
 // index page
 // =====================================
 
@@ -313,3 +337,4 @@ if (calendarDays) {
     renderCalendar();
 
 }
+
