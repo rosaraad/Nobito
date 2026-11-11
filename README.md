@@ -6,7 +6,7 @@ This project focuses on translating a complete Figma design into a clean, modern
 
 ## 🔗 Live Demo
 
-[Nobito Website](https://github.com/rosaraad/Nobito)
+[Nobito Website](https://rosaraad.github.io/Nobito/)
 
 ## 📸 Preview
 
